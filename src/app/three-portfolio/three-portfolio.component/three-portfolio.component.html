@@ -1,0 +1,22 @@
+<div class="topbar">
+  <h2>{{ resumeData?.name || 'My Portfolio' }}</h2>
+</div>
+
+<div class="canvas-wrap" #canvasContainer (click)="onCanvasClick($event)"></div>
+
+@if (selectedCard) {
+  <div class="info-panel">
+    <div class="info-header">
+      <h3>{{ selectedCard.title }}</h3>
+      <button class="close-btn" (click)="selectedCard = null">&times;</button>
+    </div>
+    
+    <p>{{ selectedCard.content }}</p>
+    
+    @if (selectedCard.title === 'CONTACT') {
+      <p>Email: {{ resumeData?.contact?.email || 'N/A' }}</p>
+      <p>Phone: {{ resumeData?.contact?.phone || 'N/A' }}</p>
+      <a [href]="resumeData?.contact?.linkedin" target="_blank" class="linkedin-btn">LinkedIn Profile</a>
+    }
+  </div>
+}

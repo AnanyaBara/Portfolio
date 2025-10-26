@@ -1,0 +1,120 @@
+/* Professional Dark Theme SCSS */
+
+$color-dark-bg: #111827; /* Deep Charcoal Blue */
+$color-text-light: #f9fafb; /* Off-White Text */
+$color-accent-blue: #3b82f6; /* Primary Accent Blue */
+$color-panel-bg: rgba(31, 41, 55, 0.95); /* Semi-transparent dark panel */
+
+@use "sass:color"; /* <-- Sass Fix: Import the color module */
+
+:host {
+  display: block;
+  height: 100vh;
+  position: relative;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  background-color: $color-dark-bg; 
+  overflow: hidden;
+}
+
+/* Top navigation bar */
+.topbar {
+  position: absolute;
+  top: 24px; 
+  left: 24px;
+  z-index: 20;
+  background: $color-panel-bg; 
+  padding: 12px 20px;
+  border-radius: 8px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+  color: $color-text-light; 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  h2 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+}
+
+/* Canvas container: must fill the entire viewport */
+.canvas-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+/* Info panel: The overlay for detailed content */
+.info-panel {
+  position: absolute;
+  right: 40px; 
+  bottom: 40px;
+  z-index: 30;
+  width: 380px; 
+  max-width: 90%;
+  background: $color-panel-bg;
+  padding: 24px 28px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15); 
+  color: $color-text-light;
+  backdrop-filter: blur(5px); 
+}
+
+/* Info panel header */
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+
+  h3 {
+    font-size: 1.6rem;
+    color: $color-accent-blue; 
+    margin: 0;
+  }
+
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #9ca3af;
+    transition: color 0.2s;
+    line-height: 1;
+
+    &:hover {
+      color: #ef4444; 
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* Info panel content */
+.info-panel p {
+  font-size: 1rem;
+  color: #d1d5db; 
+  line-height: 1.6; 
+  margin-bottom: 8px; /* Adjusted margin */
+}
+
+/* LinkedIn button */
+.linkedin-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: $color-accent-blue;
+  color: $color-dark-bg; 
+  padding: 10px 20px; 
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+
+  &:hover {
+    /* FIX: Using color.adjust for Sass compliance */
+    background: color.adjust($color-accent-blue, $lightness: -10%);
+    transform: translateY(-2px); 
+  }
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}

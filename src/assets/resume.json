@@ -1,0 +1,76 @@
+{
+  "name": "Ananya Bara",
+  "title": ".NET Full Stack Developer",
+  "contact": {
+    "email": "ananyabara.official1@gmail.com",
+    "phone": "+91 9123390494",
+    "linkedin": "https://www.linkedin.com/in/ananya-bara",
+    "location": "India"
+  },
+  "summary": ".NET Full Stack Developer with 4+ years of experience in building scalable applications delivering high-performance solutions that enhance business outcomes.",
+  "skills": [
+    "C#",
+    ".NET Core 7/8",
+    "Web API",
+    "LINQ",
+    "Entity Framework Core",
+    "RESTful APIs",
+    "JWT Authentication",
+    "Angular 18/19",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Bootstrap",
+    "jQuery",
+    "Responsive UI Design",
+    "SQL Server",
+    "T-SQL",
+    "Stored Procedures",
+    "SSRS",
+    "Agile",
+    "Git",
+    "Debugging",
+    "Performance Optimization",
+    "Documentation",
+    "Collaboration"
+  ],
+  "experience": [
+    {
+      "company": "Accenture",
+      "role": "Custom Software Engineering Analyst",
+      "duration": "08/2021 - Present",
+      "achievements": [
+        "Designed and developed .NET Core Web APIs and RESTful services, improving data flow efficiency by 25%.",
+        "Built reusable Angular UI components integrated with .NET Core APIs for faster page load and better UX.",
+        "Developed 50+ SQL Server stored procedures, queries, and triggers, reducing query execution time by 40%.",
+        "Designed and generated SSRS reports for business insights.",
+        "Created NUnit unit tests achieving high code coverage, reducing production bugs by 35%.",
+        "Collaborated with cross-functional teams, conducted code reviews, participated in deployments, and mentored junior developers."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Holiday Benefits Management System",
+      "tech": "Angular + .NET Core + JWT",
+      "description": "Developed a front-end requestor portal in Angular 18/19 integrated with .NET Core APIs for real-time holiday benefit submission and approval workflows. Implemented JWT authentication and designed reusable UI components for smooth UX."
+    },
+    {
+      "name": "Employee Directory & Hierarchy Visualization",
+      "tech": "SQL Server + .NET Core + Angular",
+      "description": "Built hierarchical employee directory leveraging SQL Server recursive queries and .NET Core APIs. Developed CRUD operations with JWT-secured endpoints and dynamic Angular visualization for organizational tree structures."
+    }
+  ],
+  "achievements": [
+    "Client Value Creation Award for impactful contributions",
+    "Kudos Award from Team Lead for delivering high-quality code and mentoring peers",
+    "Accenture Life Moments Award for event management and team contribution"
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology in Electronics & Communication Engineering",
+      "university": "Maulana Abul Kalam Azad University of Technology (MAKAUT), Kolkata, West Bengal",
+      "duration": "08/2017 - 07/2021"
+    }
+  ]
+}

@@ -1,6 +1,13 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { App } from './app/app';
+import { provideRouter } from '@angular/router';
+import { provideHttpClient } from '@angular/common/http';
+import { routes } from './app/app.routes';
+import { ThreePortfolioComponent } from './app/three-portfolio/three-portfolio.component/three-portfolio.component';
+import { enableProdMode } from '@angular/core';
+import { environment } from './environments/environment';
 
-bootstrapApplication(App, appConfig)
-  .catch((err) => console.error(err));
+if (environment.production) enableProdMode();
+
+bootstrapApplication(ThreePortfolioComponent, {
+  providers: [provideRouter(routes), provideHttpClient()]
+}).catch(err => console.error(err));
